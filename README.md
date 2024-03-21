@@ -41,7 +41,7 @@ To run the included example, you must have [Node.js](https://nodejs.org/en/) ins
 
 - [Login Discord](https://discord.com/channels/@me)`F12` _OR_ `Ctrl + Shift + I` (or `Command + Option + I` on Mac) to open the developer tools _AND_ paste the following code into the console
 
-  ```javascript
+```javascript
 (webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()
 ```
 
