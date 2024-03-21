@@ -42,25 +42,8 @@ To run the included example, you must have [Node.js](https://nodejs.org/en/) ins
 - [Login Discord](https://discord.com/channels/@me)`F12` _OR_ `Ctrl + Shift + I` (or `Command + Option + I` on Mac) to open the developer tools _AND_ paste the following code into the console
 
   ```javascript
-  window.webpackChunkdiscord_app.push([
-    [Math.random()],
-    {},
-    (req) => {
-      for (const m of Object.keys(req.c)
-        .map((x) => req.c[x].exports)
-        .filter((x) => x)) {
-        if (m.default && m.default.getToken !== undefined) {
-          return copy(m.default.getToken());
-        }
-        if (m.getToken !== undefined) {
-          return copy(m.getToken());
-        }
-      }
-    },
-  ]);
-  console.log("%cWorked!", "font-size: 50px");
-  console.log(`%cYou now have your token in the clipboard!`, "font-size: 16px");
-  ```
+(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()
+```
 
   OR [use network your Discord TOKEN](https://www.androidauthority.com/get-discord-token-3149920/)
 
